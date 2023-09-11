@@ -352,7 +352,7 @@ Let's put our instance method skills into practice by defining "association acce
 ### Walkthrough video
 
 <div class="bg-red-100 py-1 px-5" markdown="1">
-[Here is a walkthrough video for the rest of this lesson.](https://share.descript.com/view/c9aAdymOLGC). Please also read through the rest of this lesson as you watch the video (pause it frequently). Association accessors are a key concept and it will help to watch, read, and type along!
+[Here is a walkthrough video for the rest of this lesson.](https://share.descript.com/view/c9aAdymOLGC) Please also read through the rest of this lesson as you watch the video (pause it frequently). Association accessors are a key concept and it will help to watch, read, and type along!
 </div>
 
 ### The goal
