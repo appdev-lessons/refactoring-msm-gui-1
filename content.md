@@ -1,4 +1,4 @@
-# Refactoring Must See Movies GUI with Methods
+# Refactoring Must See Movies GUI with Instance Methods
 
 ## Objective
 
