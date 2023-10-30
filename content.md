@@ -680,3 +680,8 @@ We should always define instance methods in our models to encapsulate as much bu
 Our associations are among the most important domain knowledge there is, and so are among the first thing we should encapsulate in instance methods in our models.
 
 ---
+
+- Approximately how long (in minutes) did this lesson take you to complete?
+{: .free_text_number #time_taken title="Time taken" points="1" answer="any" }
+
+---
