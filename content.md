@@ -351,7 +351,7 @@ Let's put our instance method skills into practice by defining "association acce
 
 ### Walkthrough video
 
-<div class="bg-red-100 py-1 px-5" markdown="1">
+<div class="bg-blue-100 py-1 px-5" markdown="1">
 [Here is a walkthrough video for the rest of this lesson.](https://share.descript.com/view/c9aAdymOLGC) Please also read through the rest of this lesson as you watch the video (pause it frequently). Association accessors are a key concept and it will help to watch, read, and type along!
 </div>
 
@@ -391,7 +391,7 @@ Now, visit the details page of a director. You'll get a big ol' `"undefined meth
 
 All of our model class definitions are located in the `app/models` folder. Find `movie.rb` and define a method called `director`:
 
-```ruby
+```ruby{4-6}
 # app/models/movie.rb
 
 class Movie < ApplicationRecord
@@ -419,7 +419,7 @@ Let's do it step-by-step, and look at the value of `<%= @the_movie.director %>` 
 
 Step 1 is to return the the receiving movie's `director_id`:
 
-```ruby
+```ruby{5,7}
 # app/models/movie.rb
 
 class Movie < ApplicationRecord
@@ -441,7 +441,7 @@ Make sure you've got a value in the `director_id` column before moving on.
 
 Step 2 is to return an `ActiveRecord::Relation` containing records from the directors table that have the receiving movie's `director_id` in the director table's `id` column:
 
-```ruby
+```ruby{7,9:(12-29)}
 # app/models/movie.rb
 
 class Movie < ApplicationRecord
@@ -467,7 +467,7 @@ Make sure you've got a non-empty `ActiveRecord::Relation` before moving on.
 
 Step 3 is to return the `Director` itself!
 
-```ruby
+```ruby{9,11:(12-23)}
 # app/models/movie.rb
 
 class Movie < ApplicationRecord
@@ -555,7 +555,7 @@ But we shouldn't have to worry about querying associations when writing our cont
 
 Let's define an instance method in the `Director` class called `.filmography` that returns an `ActiveRecord::Relation` of movie records that belong to the receiving director:
 
-```ruby
+```ruby{4-10}
 # app/models/director.rb
 
 class Director < ApplicationRecord
